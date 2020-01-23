@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightBlue"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        >
+        <EditText
+            android:id="@+id/loginEdit"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/edit_style"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:hint="@string/login"
+            android:textAlignment="center"
+            android:src="@drawable/edit_style"
+            android:singleLine="true"
+            />
+
+        <EditText
+            android:id="@+id/passwordEdit"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/edit_style"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="0dp"
+            android:hint="@string/password"
+            android:textAlignment="center"
+            android:src="@drawable/edit_style"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            />
+
+        <Button
+            android:id="@+id/Enter_button"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/edit_style"
+            android:text="@string/enter"
+            android:onClick="onSignUp"
+            app:layout_anchor="@+id/passwordEdit"
+            app:layout_anchorGravity="bottom|center" />
+
+        <Button
+            android:id="@+id/Register_button"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_style"
+            android:text="@string/register"
+            android:onClick="onRegButtonClick"
+            app:layout_anchor="@+id/passwordEdit"
+            app:layout_anchorGravity="bottom|center" />
+
+        <!--
+        <Button
+            android:id="@+id/VK_button"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:onClick="onVKButtonClick"
+            android:text="@string/vk"
+            app:layout_anchor="@+id/passwordEdit"
+            app:layout_anchorGravity="bottom|center" />
+        -->
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

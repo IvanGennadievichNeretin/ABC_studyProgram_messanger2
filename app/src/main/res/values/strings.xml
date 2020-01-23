@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">ABC1-4</string>
+    <string name="action_settings">Настройки</string>
+    <string name="login">Login</string>
+    <string name="password">Пароль</string>
+    <string name="enter">Войти</string>
+    <string name="register">Регистрация</string>
+    <string name="email">E-mail</string>
+    <string name="registerTip">Пароль должен содержать цифры, символы латинского алфавита, специальные символы стандартной раскладки клавиатуры,
+    не содержать пробелов и быть не короче 6 символов. Имя пользователя должно содержать только символы латинского алфавита или цифры, и также быть не короче 3 символов.</string>
+    <string name="back">Назад</string>
+    <string name="refresh">Обновить</string>
+    <string name="edit">Изменить</string>
+    <string name="vk">Войти через VK</string>
+    <string name="title_activity_rooms_list">RoomsListActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="start_messaging">Начать общение</string>
+    <string name="enter_your_message">Введите сообщение</string>
+    <string name="send">SEND</string>
+    <string name="create_room">Создание комнаты</string>
+    <string name="hint_no_spaces_please">Пароль не должен содержать пробелы</string>
+    <string name="hint_name_of_room">Название комнаты</string>
+    <string name="activate_password_for_room">Добавить пароль для комнаты</string>
+    <string name="creating_room_button">Создать комнату</string>
+    <string name="cancel">Отмена</string>
+    <string name="passworded">Защищено</string>
+    <string name="open">Открыто</string>
+    <string name="delete">DEL</string>
+    <string name="username">Имя пользователя</string>
+    <string name="repeat_password">Подтвердите пароль</string>
+    <string name="exit">Выход</string>
+</resources>

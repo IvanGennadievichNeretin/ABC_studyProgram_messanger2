@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightBlue"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/registerTip"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="30dp"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/usernameEditReg"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/edit_style"
+            android:hint="@string/username"
+            android:src="@drawable/edit_style"
+            android:textAlignment="center"
+            android:singleLine="true"
+            />
+
+        <EditText
+            android:id="@+id/loginEditReg"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/edit_style"
+            android:hint="@string/email"
+            android:src="@drawable/edit_style"
+            android:textAlignment="center"
+            android:singleLine="true"
+            />
+
+        <EditText
+            android:id="@+id/passwordEditReg"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/edit_style"
+            android:layout_marginTop="20dp"
+            android:hint="@string/password"
+            android:textAlignment="center"
+            android:src="@drawable/edit_style"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            />
+
+        <EditText
+            android:id="@+id/password_repeat_EditReg"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/edit_style"
+            android:layout_marginTop="20dp"
+            android:hint="@string/repeat_password"
+            android:textAlignment="center"
+            android:src="@drawable/edit_style"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            />
+
+        <Button
+            android:id="@+id/registerButtonReg"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/edit_style"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/register"
+            android:onClick="onRegister"
+            app:layout_anchor="@+id/passwordEditReg"
+            app:layout_anchorGravity="bottom|center" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom|left"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/edit_style"
+        android:gravity="center"
+        android:onClick="onBackButton"
+        android:text="@string/back"
+        android:textAlignment="center" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
